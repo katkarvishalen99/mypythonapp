@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: mypyingress
+  namespace: python
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: smartpython.app
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: svc-python
+            port:
+              number: 80
