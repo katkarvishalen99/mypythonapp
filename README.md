@@ -6,3 +6,8 @@ Build a customized docker image using the above problem statement and deploy the
 
 The above-mentioned app should be exposed using Kubernetes ingress object and should be accessible via browser session.
 
+
+
+POC Solution:
+
+[Dockerfile_build_deploy_ingress.docx](https://github.com/user-attachments/files/22322102/Dockerfile_build_deploy_ingress.docx)
